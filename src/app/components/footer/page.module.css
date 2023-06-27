@@ -1,0 +1,11 @@
+.container{
+ display: flex;
+ justify-content: space-around;
+}
+.imagecon{
+    display:flex ;
+    flex-direction: row;
+gap:12px;
+    width:15px;
+    height:15px;
+}
