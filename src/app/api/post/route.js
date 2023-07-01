@@ -31,4 +31,4 @@ try {
       return new NextResponse("Database Error", { status: 500 });
     }
   };
-  
+

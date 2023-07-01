@@ -2,7 +2,7 @@
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
-import useSWR from 'swr'
+import useSWR ,{mutate} from 'swr'
 import styles from'./navbar.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,6 +10,19 @@ const Dashboard= () => {
 
 const session=useSession()
 const router=useRouter()
+const deletes=async(id)=>{
+  {
+    try {
+      console.log("ef")
+      await fetch(`/api/post/${id}`, {
+        method: "DELETE",
+      });
+      mutate();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+}
 const handelsubmit = async (e) => {
   e.preventDefault(); 
   console.log('dd');
@@ -53,7 +66,7 @@ if(session.status === "authenticated")
 
   {isLoading  ? "loading":data.map((item)=>(
     
-    <div className={styles.container} key={item._id}>
+    <div  key={item._id}>
 
 <div className={styles.imgcontainer} >
 <Image src={item.img} width={100} height={100} alt='no' />
@@ -61,10 +74,11 @@ if(session.status === "authenticated")
   </div>
  
 <h2 className={styles.postTitle}>{item.title}</h2>
-<Link  href={`/blog/${item._id}`} >GO to your blog</Link>
-<span style={styles.delete}>DELETE</span>
+<div className={styles.bt}>
+<Link  className={styles.Link} href={`/blog/${item._id}`} >GO to your blog</Link>
+<button onClick={deletes} style={styles.deleted} ><span >DELETE</span></button>
 
-
+</div>
 </div>
   ))}
 
