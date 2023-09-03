@@ -1,11 +1,42 @@
-.container{
- display: flex;
- justify-content: space-around;
-}
-.imagecon{
-    display:flex ;
-    flex-direction: row;
-gap:12px;
-    width:15px;
-    height:15px;
-}
+/* Footer.module.css */
+.container {
+    margin-top: 40px;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin-bottom: 5px;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 10px;
+  }
+  

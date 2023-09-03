@@ -10,9 +10,11 @@ return (
 <div className={styles.imgContainer}>
 <Image
        src="/home.png"
-       fill={true}
+       
        alt=""
        className={styles.img}
+       width={260}
+       height={260}
      />
 <div className={styles.imgText}>
 <h1 className={styles.imgTitle}>Design Agency</h1>
@@ -26,17 +28,8 @@ Crafting beautiful and impactful designs
 <h1 className={styles.title}>Who Are We?</h1>
 <p className={styles.desc}>
 At our Design Agency, we are passionate about creating exceptional designs that captivate and engage. Our team of skilled designers combines creativity, technical expertise, and strategic thinking to deliver outstanding results. Whether it's crafting visually stunning graphics, designing intuitive user interfaces, or developing compelling branding elements, we bring ideas to life through our design solutions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-beatae, a suscipit eos. Animi quibusdam cum omnis officiis
-<br />
-<br />
-voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-officiis voluptatum quo ea eveniet?
+quae dolor
+
 </p>
 </div>
 <div className={styles.item}>

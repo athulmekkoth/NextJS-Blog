@@ -1,6 +1,7 @@
 .container {
   border: 2px white solid;
  
+ 
 }
 
 .top {
@@ -54,4 +55,13 @@
   font-weight: 300;
   color: #999;
   text-align: justify;
+}
+@media (max-width:768px)
+{
+  .container{
+    display:flex;
+    flex-direction: column;
+    
+
+  }
 }

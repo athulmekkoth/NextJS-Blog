@@ -85,7 +85,8 @@ if(session.status === "authenticated")
 
 </div>
 <form className={styles.new} onSubmit={handelsubmit}>
-  <h1>Add New Post</h1>
+  <h1>Hey Any New Blog Idea!</h1>
+  <h1>Share it with others</h1>
   <input type='text' placeholder='title' className={styles.input} />
   <input type='text' placeholder='Desc' className={styles.input} />
   <input type='text' placeholder='Image' className={styles.input} />

@@ -18,7 +18,7 @@ export default function RootLayout({  children }) {
         <ThemeProvider>
      <AuthProvide>
 
-          <div className="container">
+     <div className="container" >
               <Navbar />
               {children}
               <Footer />

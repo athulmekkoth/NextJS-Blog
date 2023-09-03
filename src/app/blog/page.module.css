@@ -24,3 +24,21 @@
     color: #999;
   }
  
+
+@media (max-width:768px)
+{
+  .container {
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    border: yellow solid 2px;
+    padding: 10px;
+  } 
+  .image{
+    object-fit: contain;
+  }
+  
+}

@@ -1,63 +1,75 @@
 .imgContainer {
-    margin-top: 100px;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    filter: grayscale(100%);
-  }
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(100%);
+  background-image: url('/background-image.jpg'); /* Add a background image */
+  background-size: cover;
+  background-position: center;
 
+}
+
+.imgText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.imgTitle {
+  font-size: 36px;
+  margin-top: 106px;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.imgDesc {
+  font-size: 24px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.textContainer {
+  margin-top: 10px;
+}
+
+.item {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #333; /* Change title color */
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555; /* Change description color */
   
-  .imgText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-  }
-  
-  .imgTitle {
-    font-size: 36px;
-    margin-bottom: 16px;
-  }
-  
-  .imgDesc {
-    font-size: 24px;
-  }
-  
-  .textContainer {
-    margin-top: 100px;
-  }
-  
-  .item {
-    margin-bottom: 40px;
-  }
-  
-  .title {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-  
-  .desc {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .button {
-    margin-top: 24px;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #ff6b6b;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #ff4f4f;
-  }
-  
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.button {
+ 
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff4f4f;
+  transform: scale(1.05); /* Add a hover effect to increase button size */
+}

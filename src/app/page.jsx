@@ -11,8 +11,8 @@ export default function Home() {
    
     <p className={styles.para}>We make your ideas into Reality.We bring the tems from global tech indusrty</p>
 
-   
-    <button className={styles.button}> See our works</button>
+    <p className={styles.para}>We a group of indusry experts</p>
+
  </div>
     <div >
       <Image src={homes} alt="home" className={styles.img}/>
